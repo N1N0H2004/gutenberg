@@ -28,4 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::resource("gutenbergs", \App\Http\Controllers\GutenbergController::class);
+
+
 require __DIR__.'/auth.php';

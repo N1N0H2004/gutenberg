@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(GutenbergSeeder::class);
 
         $ninoh = User::factory()->create([
             'name' => 'Ninoh van Dijke',
