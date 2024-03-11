@@ -23,13 +23,15 @@ class GutenbergController extends Controller
     {
 
         $request->validate([
+            'titel' => 'required',
             'inhoud' => 'required',
-
+            'slug' => 'required',
         ]);
 
         Gutenberg::create([
+            'titel' => $request->titel,
             'inhoud' => $request->inhoud,
-
+            'slug' => $request->slug,
         ]);
 
         return redirect()->route('gutenbergs.index')->with('success', 'Gutenberg created successfully.');

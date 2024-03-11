@@ -22,8 +22,19 @@
      <body class="antialiased">
 
      <form action="{{ route('gutenbergs.store') }}" method="post">
-         @csrf
-         <textarea id="inhoud" name="inhoud" hidden></textarea>
+         @csrf <!-- Voeg de CSRF-token toe -->
+         <div>
+             <label for="titel">Titel:</label>
+             <input type="text" id="titel" name="titel" required>
+         </div>
+         <div>
+             <label for="slug">Slug:</label>
+             <input type="text" id="slug" name="slug" required>
+         </div>
+         <div>
+             <label for="inhoud">Inhoud:</label>
+             <textarea id="inhoud" name="inhoud" required></textarea>
+         </div>
          <button type="submit" class="w-auto bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Add gutenberg</button>
          <a href="{{ route('gutenbergs.index', $gutenberg->id) }}" class="w-auto bg-white tracking-wide text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Back</a>
      </form>

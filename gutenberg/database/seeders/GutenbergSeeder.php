@@ -14,8 +14,9 @@ class GutenbergSeeder extends Seeder
     public function run(): void
     {
         $gutenbergs = [
-            [
+            [   'titel' => 'Dit is de nieuwe titel!',
                 'inhoud' => 'Dit is de nieuwe inhoud van de nieuwe titel!!',
+                'slug' => 'over-ons',
                 'created_at' => now(),
                 'updated_at' => now()
             ],

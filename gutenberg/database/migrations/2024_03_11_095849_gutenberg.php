@@ -14,7 +14,9 @@ return new class extends Migration
 
         Schema::create('gutenberg', function (Blueprint $table) {
             $table->id();
+            $table->string('titel');
             $table->text('inhoud');
+            $table->string('slug');
             $table->timestamps();
         });
     }
