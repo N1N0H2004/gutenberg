@@ -22,7 +22,6 @@
      <div class="container mx-auto py-8">
          <form action="{{ route('gutenbergs.store') }}" method="post" class="max-w mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
              @csrf
-             @method('PUT')
 
              <div class="mb-4">
                  <label for="titel" class="block text-gray-700 font-bold mb-2">Titel:</label>
@@ -40,8 +39,8 @@
              </div>
 
              <div class="flex items-center justify-between">
+                 <a href="{{ route('gutenbergs.index', $gutenberg->id) }}" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Back</a>
                  <button type="submit" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Update Gutenberg</button>
-                 <a href="{{ route('gutenbergs.index', $gutenberg->slug) }}" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Back</a>
              </div>
          </form>
      </div>

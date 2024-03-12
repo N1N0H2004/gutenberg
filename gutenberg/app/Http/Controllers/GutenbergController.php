@@ -34,11 +34,12 @@ class GutenbergController extends Controller
             'slug' => 'required',
         ]);
 
-        $clean_inhoud = strip_tags($request->inhoud);
+//        $clean_inhoud = strip_tags($request->inhoud);
 
         Gutenberg::create([
             'titel' => $request->titel,
-            'inhoud' => $clean_inhoud,
+//            'inhoud' => $clean_inhoud,
+            'inhoud' => $request->inhoud,
             'slug' => $request->slug,
         ]);
 
@@ -64,6 +65,7 @@ class GutenbergController extends Controller
         $gutenberg->update([
             'titel' => $request->titel,
             'inhoud' => $clean_inhoud,
+//            'inhoud' => $request->inhoud,
             'slug' => $request->slug,
         ]);
 

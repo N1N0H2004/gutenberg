@@ -18,7 +18,7 @@
                         <div class="justify-between items-center my-4">
                             <strong class="my-4">Titel: </strong>{{ $gutenberg->titel }} <br>
                             <strong class="my-4">Slug: </strong>{{ $gutenberg->slug }} <br>
-                            <strong class="my-4">Inhoud: </strong>{{ $gutenberg->inhoud }}
+                            <strong class="my-4">Inhoud: </strong>{!! $gutenberg->inhoud !!}
                             <br><br>
                             <div class="w-52 flex">
                                 <a href="{{ route('gutenbergs.edit', $gutenberg->slug) }}" class="w-auto h-8 bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Edit</a>

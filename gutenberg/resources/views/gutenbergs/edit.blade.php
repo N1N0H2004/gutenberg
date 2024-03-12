@@ -26,12 +26,12 @@
 
         <div class="mb-4">
             <label for="titel" class="block text-gray-700 font-bold mb-2">Titel:</label>
-            <input type="text" id="titel" name="titel" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <input type="text" id="titel" name="titel" value="{{ $gutenberg->titel }}" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
 
         <div class="mb-4">
             <label for="slug" class="block text-gray-700 font-bold mb-2">Slug:</label>
-            <input type="text" id="slug" name="slug" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <input type="text" id="slug" name="slug" value="{{ $gutenberg->slug }}" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
 
         <div class="mb-4">
@@ -40,8 +40,8 @@
         </div>
 
         <div class="flex items-center justify-between">
-            <button type="submit" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Update Gutenberg</button>
             <a href="{{ route('gutenbergs.index', $gutenberg->slug) }}" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-blue-500 hover:border-blue-600 hover:bg-blue-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Back</a>
+            <button type="submit" class="w-auto bg-gray-300 tracking-wide text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Update Gutenberg</button>
         </div>
     </form>
 </div>
