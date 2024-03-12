@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\GutenbergController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    if (auth()->check()) {
+        Auth::logout();
+    }
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -28,7 +33,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource("gutenbergs", \App\Http\Controllers\GutenbergController::class);
-
+Route::resource("gutenbergs", GutenbergController::class);
 
 require __DIR__.'/auth.php';

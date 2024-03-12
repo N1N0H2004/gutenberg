@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-sans font-bold text-xl">
+        <h2 class="font-sans font-bold text-white text-xl">
             {{ __('Gutenbergs') }}
         </h2>
     </x-slot>
@@ -21,7 +21,9 @@
                             <strong class="my-4">Inhoud: </strong>{{ $gutenberg->inhoud }}
                             <br><br>
                             <div class="w-52 flex">
-                                <a href="{{ route('gutenbergs.edit', $gutenberg->id) }}" class="w-auto mr-4 h-8 bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Edit</a>
+                                <a href="{{ route('gutenbergs.edit', $gutenberg->id) }}" class="w-auto h-8 bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Edit</a>
+                                <a href="{{ route('gutenbergs.show', $gutenberg->slug)  }}" class="w-auto h-8 ml-2 mr-2 bg-white float-right text-gray-800 font-bold rounded border-b-2 border-orange-500 hover:border-orange-600 hover:bg-orange-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">Show</a>
+
                                 @include('parsels.gutenbergDelete')
                             </div>
                             <div id="confirmationPopup-{{ $gutenberg->id }}" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center" style="display: none;"></div>

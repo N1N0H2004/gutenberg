@@ -18,6 +18,10 @@ class Gutenberg extends Model
         'titel',
         'slug',
         'inhoud',
-
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

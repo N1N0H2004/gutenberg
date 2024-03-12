@@ -14,6 +14,12 @@ class GutenbergController extends Controller
         return view('gutenbergs.index', compact('gutenbergs'));
     }
 
+    public function show(Gutenberg $gutenberg)
+    {
+        return view('gutenbergs.show', compact('gutenberg'));
+
+    }
+
     public function create(Gutenberg $gutenberg)
     {
         return view('gutenbergs.create', compact('gutenberg'));
@@ -28,9 +34,11 @@ class GutenbergController extends Controller
             'slug' => 'required',
         ]);
 
+        $clean_inhoud = strip_tags($request->inhoud);
+
         Gutenberg::create([
             'titel' => $request->titel,
-            'inhoud' => $request->inhoud,
+            'inhoud' => $clean_inhoud,
             'slug' => $request->slug,
         ]);
 
@@ -40,16 +48,15 @@ class GutenbergController extends Controller
 
     public function edit(Gutenberg $gutenberg)
     {
-        $gutenbergs = Gutenberg::all();
-
         return view('gutenbergs.edit', compact('gutenberg'));
     }
 
     public function update(Request $request, Gutenberg $gutenberg)
     {
         $request->validate([
-            'inhoud' => 'required',
-
+            'titel' => $request->titel,
+            'inhoud' => $request->inhoud,
+            'slug' => $request->slug,
         ]);
 
         $gutenberg->update([
@@ -69,7 +76,5 @@ class GutenbergController extends Controller
             return redirect()->back()->with('alert', 'An error occurred while deleting the gutenberg.');
         }
     }
-
-
 
 }
