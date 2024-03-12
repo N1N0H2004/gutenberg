@@ -15,6 +15,8 @@ class Gutenberg extends Model
     protected $table = 'gutenberg';
 
     protected $fillable = [
+        'titel',
+        'slug',
         'inhoud',
 
     ];

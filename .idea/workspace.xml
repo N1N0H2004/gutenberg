@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab02fe81-5266-467c-b803-bfd2169b9db5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gutenberg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gutenberg.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gutenberg/app/Http/Controllers/GutenbergController.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/app/Http/Controllers/GutenbergController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/database/migrations/2024_03_11_095849_gutenberg.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/database/migrations/2024_03_11_095849_gutenberg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/database/seeders/GutenbergSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/database/seeders/GutenbergSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gutenberg/app/Models/Gutenberg.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/app/Models/Gutenberg.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/gutenberg/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -25,10 +28,128 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="E:\xampp\php\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="E:\xampp\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/gutenberg/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/embed/embed" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/composer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/league/config" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/gutenberg/vendor/van-ons/laraberg" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2dXGs3kvZh9VEPKLNK353HRJ4FN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,7 +160,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/laragon/www/News-gamess/news-games",
+    "last_opened_file_path": "E:/laragon/www/gutenberg/gutenberg/resources/views/parsels",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +170,18 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laragon\www\gutenberg\gutenberg\resources\views\parsels" />
+      <recent name="E:\laragon\www\gutenberg\gutenberg\resources\views\gutenbergs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/gutenberg/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,6 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710147212829</updated>
       <workItem from="1710147213921" duration="20523000" />
+      <workItem from="1710229734302" duration="2709000" />
     </task>
     <servers />
   </component>

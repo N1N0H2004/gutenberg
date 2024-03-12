@@ -25,11 +25,11 @@
          @csrf <!-- Voeg de CSRF-token toe -->
          <div>
              <label for="titel">Titel:</label>
-             <input type="text" id="titel" name="titel" required>
+             <x-text-input type="text" id="titel" name="titel" required ></x-text-input>
          </div>
          <div>
              <label for="slug">Slug:</label>
-             <input type="text" id="slug" name="slug" required>
+             <x-text-input type="text" id="slug" name="slug" required ></x-text-input>
          </div>
          <div>
              <label for="inhoud">Inhoud:</label>

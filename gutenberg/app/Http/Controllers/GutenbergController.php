@@ -60,4 +60,16 @@ class GutenbergController extends Controller
         return redirect()->route('gutenbergs.index')->with('success', 'Gutenberg edited successfully.');
     }
 
+    public function destroy(Gutenberg $gutenberg)
+    {
+        try {
+            $gutenberg->delete();
+            return redirect()->route('gutenbergs.index')->with('warning', 'Gutenberg delete successfully!');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('alert', 'An error occurred while deleting the gutenberg.');
+        }
+    }
+
+
+
 }
