@@ -54,14 +54,17 @@ class GutenbergController extends Controller
     public function update(Request $request, Gutenberg $gutenberg)
     {
         $request->validate([
-            'titel' => $request->titel,
-            'inhoud' => $request->inhoud,
-            'slug' => $request->slug,
+            'titel' => 'required',
+            'inhoud' => 'required',
+            'slug' => 'required',
         ]);
 
-        $gutenberg->update([
-            'inhoud' => $request->inhoud,
+        $clean_inhoud = strip_tags($request->inhoud);
 
+        $gutenberg->update([
+            'titel' => $request->titel,
+            'inhoud' => $clean_inhoud,
+            'slug' => $request->slug,
         ]);
 
         return redirect()->route('gutenbergs.index')->with('success', 'Gutenberg edited successfully.');

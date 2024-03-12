@@ -1,10 +1,10 @@
 {{-- DELETE BUTTON --}}
-<button type="button" onclick="deleteOpenConfirmationPopup('{{ $gutenberg->id }}')" class="w-auto h-8 bg-white float-right text-gray-800 font-bold rounded border-b-2 border-red-500 hover:border-red-600 hover:bg-red-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
+<button type="button" onclick="deleteOpenConfirmationPopup('{{ $gutenberg->slug }}')" class="w-auto h-8 bg-white float-right text-gray-800 font-bold rounded border-b-2 border-red-500 hover:border-red-600 hover:bg-red-500 hover:text-white shadow-md py-2 px-6 inline-flex items-center">
     Delete
 </button>
 </div>
 
-<div id="confirmationPopup-{{ $gutenberg->id }}" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center" style="display: none;">
+<div id="confirmationPopup-{{ $gutenberg->slug }}" class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center" style="display: none;">
     <div class="bg-white p-8 rounded-md shadow-md">
         <div class="text-center p-5 flex-auto justify-center">
 
@@ -16,11 +16,11 @@
                                                   This process cannot be undone</p>
 
             <div class="p-3  mt-2 text-center space-x-4 md:block">
-                <button onclick="deleteCloseConfirmationPopup('{{ $gutenberg->id }}')" class="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100">
+                <button onclick="deleteCloseConfirmationPopup('{{ $gutenberg->slug }}')" class="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100">
                     Cancel
                 </button>
 
-                <form id="deleteForm-{{ $gutenberg->id }}" method="POST" action="{{ route('gutenbergs.destroy', $gutenberg->id) }}" class="inline">
+                <form id="deleteForm-{{ $gutenberg->slug }}" method="POST" action="{{ route('gutenbergs.destroy', $gutenberg->slug) }}" class="inline">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="mb-2 md:mb-0 bg-red-500 border border-red-500 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-red-600">
