@@ -60,12 +60,12 @@ class GutenbergController extends Controller
             'slug' => 'required',
         ]);
 
-        $clean_inhoud = strip_tags($request->inhoud);
+//        $clean_inhoud = strip_tags($request->inhoud);
 
         $gutenberg->update([
             'titel' => $request->titel,
-            'inhoud' => $clean_inhoud,
-//            'inhoud' => $request->inhoud,
+//            'inhoud' => $clean_inhoud,
+            'inhoud' => $request->inhoud,
             'slug' => $request->slug,
         ]);
 

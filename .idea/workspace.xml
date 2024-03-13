@@ -7,10 +7,8 @@
     <list default="true" id="ab02fe81-5266-467c-b803-bfd2169b9db5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gutenberg/app/Http/Controllers/GutenbergController.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/app/Http/Controllers/GutenbergController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/gutenbergs/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gutenberg/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gutenberg/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/gutenberg/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,21 +152,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/laragon/www/gutenberg/gutenberg/resources/views/parsels",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/laragon/www/gutenberg/gutenberg/resources/views/parsels&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\laragon\www\gutenberg\gutenberg\resources\views\parsels" />
@@ -197,7 +195,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710147212829</updated>
       <workItem from="1710147213921" duration="20523000" />
-      <workItem from="1710229734302" duration="21071000" />
+      <workItem from="1710229734302" duration="21667000" />
+      <workItem from="1710315331708" duration="1514000" />
     </task>
     <servers />
   </component>
